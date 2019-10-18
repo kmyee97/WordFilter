@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFilter", "WordFilter\WordFilter.csproj", "{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordFilterApp", "WordFilterApp\WordFilterApp.csproj", "{8F029B25-A56E-4E47-982F-CB5B014EFF7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C} = {D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F029B25-A56E-4E47-982F-CB5B014EFF7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F029B25-A56E-4E47-982F-CB5B014EFF7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F029B25-A56E-4E47-982F-CB5B014EFF7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F029B25-A56E-4E47-982F-CB5B014EFF7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

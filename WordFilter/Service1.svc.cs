@@ -14,10 +14,10 @@ namespace WordFilter
     {
         public string WordFilter(string str)
         {
-            string[] stopwords = new string[] { "a", "an", "in", "on", "the", "is", "are", "am"};
+            string[] stopwords = new string[] { " a ", " an ", " in ", " on ", " the ", " is ", " are ", " am ", " A ", " An ", " In ", " Is "};
             foreach (string word in stopwords)
             {
-                str = str.Replace(word, "");
+                str = str.Replace(word, " ");
             }
             return str;
         }

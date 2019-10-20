@@ -64,7 +64,7 @@
             // output
             // 
             this.output.AutoSize = true;
-            this.output.Location = new System.Drawing.Point(23, 134);
+            this.output.Location = new System.Drawing.Point(55, 131);
             this.output.Name = "output";
             this.output.Size = new System.Drawing.Size(133, 20);
             this.output.TabIndex = 3;

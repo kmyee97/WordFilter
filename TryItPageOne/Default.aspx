@@ -1,42 +1,18 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TryItPageOne._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
+        <h1>Word Filter</h1>
+        <p class="lead"> About, The operation takes in an input from the user and outputs a string with the stop words removed.</p>
+        <pre style="border-width: 1px; border-style: solid; border-color: rgb(240, 240, 224); padding: 5px; margin-top: -5px; font-size: 1.2em; font-family: &quot;Courier New&quot;; background-color: rgb(229, 229, 204); color: rgb(0, 0, 0); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;">This service is from, <a href="http://localhost:57204/Service1.svc?wsdl">http://localhost:57204/Service1.svc?wsdl</a></pre>
+        <p class="lead"> (1) string WordFilter(string str) 
+                returns a string with the stop words removed
+        </p>
+        <p class="lead"> Please type in a string below.</p>
+        <asp:TextBox ID="textBox1" Width="750px" Height="100px" runat="server" TextMode="MultiLine" OnTextChanged="textBox1_TextChanged" />
+        <asp:Button Text="submit" ID="Button1" OnClick="WordFilter" runat="server" /><br />
+        <asp:Label ID="output" runat="server" Text="Output"></asp:Label>
     </div>
 
 </asp:Content>

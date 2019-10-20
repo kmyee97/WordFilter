@@ -18,6 +18,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "secondServiceApp", "secondS
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryItPageOne", "TryItPageOne\TryItPageOne.csproj", "{169CC4B1-768A-465E-A50C-748E8999A57B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D3FCDBC5-A50C-486D-8D3D-5AAD7339175C} = {D3FCDBC5-A50C-486D-8D3D-5AAD7339175C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryItPagetwo", "TryItPagetwo\TryItPagetwo.csproj", "{A164F827-358E-4844-96C0-F44B9137239E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A4CDDDB7-E990-4569-9D12-FAD16447E686} = {A4CDDDB7-E990-4569-9D12-FAD16447E686}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,10 @@ Global
 		{169CC4B1-768A-465E-A50C-748E8999A57B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{169CC4B1-768A-465E-A50C-748E8999A57B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{169CC4B1-768A-465E-A50C-748E8999A57B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A164F827-358E-4844-96C0-F44B9137239E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A164F827-358E-4844-96C0-F44B9137239E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A164F827-358E-4844-96C0-F44B9137239E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A164F827-358E-4844-96C0-F44B9137239E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,5 +13,18 @@ namespace TryItPageOne
         {
 
         }
+        protected void WordFilter(object sender, EventArgs e)
+        {
+            WordFilterService.Service1Client filtering = new WordFilterService.Service1Client();
+            string newString = "";
+            string input = textBox1.Text;
+            newString = filtering.WordFilter(input);
+            output.Text = newString;
+        }
+
+        protected void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
